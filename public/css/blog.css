@@ -1,0 +1,85 @@
+:root{
+    --bg: #005a66;
+    --title: #007f6a;
+    --para-text: rgba(0,0,0,0.67);
+    --title-font: 'Josefin Slab', serif;
+    --text-font: 'PT Serif', Serif;
+    --width: 20em;
+  }
+  body{
+    background: var(--bg);
+    display: grid;
+  }
+
+.header {
+    padding: 15px;
+    font-size: 20px;
+    text-align: left;
+    background: white;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+ 
+  li {
+    display: inline;
+    padding-left: 0.3%;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+    background-color: darkcyan;
+    border-radius: 2px;
+  }
+.lab{
+  font-size: xx-large;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+.card{
+  padding-left: 25%;
+  padding-right: 25%;
+  
+}
+.texts{
+  width: 80%;
+ height: 80px;
+}
+.tex{
+  width: 50%;
+ height: 40px;
+}
+.form{
+  padding: 5%;
+}
+
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  text-align: center;
+  align-content: center;
+}
+
+button:hover {
+  opacity:1;
+}
+
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+.cancelbtn, .signupbtn {
+  width: 25%;
+}

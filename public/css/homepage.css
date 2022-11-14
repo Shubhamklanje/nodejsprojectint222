@@ -1,0 +1,129 @@
+:root{
+  --bg: #005a66;
+  --title: #007f6a;
+  --para-text: rgba(0,0,0,0.67);
+  --title-font: 'Josefin Slab', serif;
+  --text-font: 'PT Serif', Serif;
+  --width: 20em;
+}
+body{
+  background: var(--bg);
+  display: grid;
+  
+}
+
+.header {
+    padding: 15px;
+    font-size: 20px;
+    text-align: left;
+    background: white;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+.newblog {
+  background-color: white;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  text-align: center;
+  align-content: center;
+  border-radius: 10px;
+}
+.btnn{
+  padding-left: 35%;
+  padding-right: 35%;
+  
+}
+  li {
+    display: inline;
+    padding-left: 0.3%;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+    background-color: darkcyan;
+    border-radius: 2px;
+  }
+
+.footer {
+    padding: 2px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 5px;
+  }
+  
+  h1, h2, h3, h4, h5, h6{
+    color: var(--title);
+    text-transform: capitalize;
+    font-family: cursive;
+    
+  }
+  
+  section,
+  div{
+    box-sizing: border-box;
+  }
+  
+  section{
+   
+    width: var(--width);
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  section h3{
+    font-size: calc(var(--width)/10);
+    text-align: center;
+  }
+  section p{
+    font-family: cursive;
+    color: var(--para-text);
+    font-size: calc(var(--width)/20);
+    text-align: justify;
+  }
+  .des{
+    font-size: 20px;
+    color: green;
+    font-family:cursive;
+  }
+  h1{
+    color: #fff;
+  }
+  
+  section a{
+    
+    text-decoration: none;
+    color: var(--bg);
+    font-family: var(--title-font);
+    font-weight: 700;
+    font-size: calc(var(--width)/23);
+  }
+
+  .column {
+    width: 25%;
+    padding: 0 10px;
+    display: flex;
+  }
+  .row {
+    max-width: 100%;
+    margin: 0 -5px;
+    display: flex; 
+    align-items: stretch; 
+    justify-content: space-between;
+  }
+  .box{
+    max-width: 1170px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }

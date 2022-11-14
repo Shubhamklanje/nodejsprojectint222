@@ -1,0 +1,36 @@
+:root{
+    --bg: #005a66;
+    --title: #007f6a;
+    --para-text: rgba(0,0,0,0.67);
+    --title-font: 'Josefin Slab', serif;
+    --text-font: 'PT Serif', Serif;
+    --width: 20em;
+  }
+  body{
+    background: var(--bg);
+    display: grid;
+  }
+
+.header {
+    padding: 15px;
+    font-size: 20px;
+    text-align: left;
+    background: white;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+ 
+  li {
+    display: inline;
+    padding-left: 0.3%;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+    background-color: darkcyan;
+    border-radius: 2px;
+  }

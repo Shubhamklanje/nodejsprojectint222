@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/homepage.css" />
+  <title>homepage ejs</title>
+</head>
+
+<body>
+  <h1 style="text-align: center;">My Blogging site</h1>
+  <div class="header">
+    <ul>
+      <li><a href="/homepage">Home</a></li>
+      <li><a href="/create"> Create-New-Blog </a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/login">logout</a></li>
+    </ul>
+  </div>
+  <br>
+  <div class="box">
+  <div class="row " >
+  
+    <% datas.forEach(item => { %>  
+      <div class="column">
+          <section>
+            <h3><%= item.title %></h3>
+            <p class="des"><%= item.description %></p>
+            <p> <%= item.text %> </p>
+              <form action="/<%= item.id %>" method="post">
+                <button type='submit'>Delete</button>
+                </form>
+          </section>
+          <br>
+        </div>
+      <%})%>
+      
+    </div>
+  </div>
+<br>
+  <div class="btnn">
+    <button class="newblog"> <a style="background-color: white;color: black;font-weight: bold;" href="/create"> Create New Blog </a></button>
+  </div>
+  </div>
+
+  <div class="footer">
+    <h2>Footer</h2>
+  </div>
+</body>
+
+</html>
